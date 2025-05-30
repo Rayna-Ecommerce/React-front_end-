@@ -1,0 +1,136 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Poppins'; 
+    background-color: #f5f5f5; 
+    color: #333; 
+}
+
+/* Header Styles */
+header {
+    background-color: #6f4c3e; /* Coffee brown color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease; /* Fade-in animation */
+}
+
+/* Navigation Styles */
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s, transform 0.3s; /* Transition for background and transform */
+}
+
+nav a:hover {
+    background-color: #d9a86a; /* Light brown on hover */
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 20px;
+    animation: slideIn 0.5s ease; /* Slide-in animation for sections */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #6f4c3e; /* Same as header */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    animation: fadeIn 1s ease; /* Fade-in animation */
+}
+
+/* Button Styles */
+.button {
+    background-color: #d9a86a; /* Button color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Transition for background and transform */
+}
+
+.button:hover {
+    background-color: #c89f5b;
+    transform: scale(1.05);
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif; 
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.5em; 
+}
+
+h2 {
+    font-size: 2em; 
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header, footer {
+        padding: 15px;
+    }
+
+    .button {
+        width: 100%; /* Full width buttons on smaller screens */
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

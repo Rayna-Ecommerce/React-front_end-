@@ -1,0 +1,17 @@
+.hero-section {
+  background-image: url('../asset/background.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Atur tinggi hero */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
